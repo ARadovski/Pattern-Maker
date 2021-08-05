@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>My Emojis</h1>   
+        <div id="emoji-container"></div>
+        <input type="text" id="emoji-input" placeholder="type an emoji 🎉">
+        <div class="buttons-wrapper">
+            <button id="push-btn">Add to end</button>
+            <button id="unshift-btn">Add to beginning</button>
+        </div>
+        <div class="buttons-wrapper">
+            <button id="pop-btn">Remove from end</button>
+            <button id="shift-btn">Remove from beginning</button>
+        </div>
+        <div id="background"></div>
+        <div id="background-right"></div>
+        
+        <!-- <svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='300%'>
+            <text id="emojis" x='0px' y='10px' fill='black' font-size='80'>
+                <animate 
+                attributeName="y" 
+                values="0px; 70px; 0px"
+                dur="10s"
+                calcMode="paced"
+                repeatCount="indefinite"/>
+                🍲⛷👨‍💻👨‍💻⛷🍲
+            </text>
+        </svg> -->
+        
+        <script src="index.pack.js"></script>
+    </body>
+</html>
+
+     <!-- <style type="text/css">
+                #emojis { animation: x 1s ease-in-out infinite alternate; }
+
+                @keyframes x {
+                    from { 
+                        fill: #000;
+                        font-size: 10px;
+                        y: 0px;
+                         }
+                    to { 
+                        fill: #fff;
+                        font-size: 30px; 
+                        y: 50px;}
+                }
+            </style> -->

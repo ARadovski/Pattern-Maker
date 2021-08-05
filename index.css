@@ -1,0 +1,122 @@
+html {
+    height: 100vh;
+    font-family: Baloo;
+}
+
+/* @keyframes height {
+    from {
+        background-size-y: 10px;
+    }
+    to {
+        background-size-y: 100px;
+    }
+} */
+
+body {
+    padding: 10px;
+    background-color: lightblue;
+    /* background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='100%25'%3e%3ctext id='emojis' x='0px' y='10px' fill='black' font-size='100'%3e%3canimate attributeName='y' values='0px; 70px; 0px' dur='10s' repeatCount='indefinite'/%3e 👨‍💻⛷🍲 %3c/text%3e%3c/svg%3e"); */
+    background-size: 60% 10px;
+    background-position: bottom center;
+    /* background-attachment: fixed; */
+    /* animation: height 4s infinite alternate; */
+    /* background-repeat: repeat; */  
+}
+
+#emoji-container {
+    margin: 40px;
+    text-align: center;
+    background-color: lightcoral;
+    /* background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='5px' width='400%'><text x='0' y='90px' fill='black' font-size='300'>🍲⛷👨‍💻👨‍💻⛷🍲</text></svg>");
+    background-size: 70% 10px;
+    background-position: top center;
+     */
+}
+
+#emoji-container span {
+    margin: 10px;
+    font-size: 60px;
+}
+
+#push-btn, #unshift-btn {
+    background-color: #80D87F;
+}
+
+#shift-btn,#pop-btn {
+    background-color: #E23349;
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+}
+
+input {
+    margin: 0 auto;
+    display: block;
+    border: none;
+    height: 30px;
+    background: white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+button {
+    font-family: Baloo;
+    background: darkcyan;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin: 0 4px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+#background,
+#background-right {
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+    font-size: 25rem;
+    letter-spacing: -1.2em;
+    /* transform: scale(8,.1); */
+    /* animation-name: stretchy, fontsiz; */
+    animation-duration:  4s, 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    /* overflow: hidden; */
+}
+
+#background-right {
+    right: 10px;
+}
+
+@keyframes stretchy {
+    from {
+        transform: scale(.1,1);
+        top: 0px;  
+        left: 20px;     
+    }
+    to {
+        transform: scale(2,.1);  
+        top: 100px;
+        left: 100px;
+    }
+}
+
+@keyframes fontsiz {
+    from {
+        font-size: 1rem;
+    }
+    to {
+        font-size: 20rem;
+    }
+}
+
