@@ -1,51 +1,37 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <h1>My Emojis</h1>   
-        <div id="emoji-container"></div>
-        <input type="text" id="emoji-input" placeholder="type an emoji 🎉">
-        <div class="buttons-wrapper">
-            <button id="unshift-btn">Add to beginning</button>
-            <button id="push-btn">Add to end</button>
-        </div>
-        <div class="buttons-wrapper">
-            <button id="shift-btn">Remove from beginning</button>
-            <button id="pop-btn">Remove from end</button>
-        </div>
-        <div id="background"></div>
-        <div id="background-right"></div>
+        <header class="header">
+            <h1>The Pattern-Maker</h1> 
+        </header>
+
+        <div class="display"></div>
         
-        <!-- <svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='300%'>
-            <text id="emojis" x='0px' y='10px' fill='black' font-size='80'>
-                <animate 
-                attributeName="y" 
-                values="0px; 70px; 0px"
-                dur="10s"
-                calcMode="paced"
-                repeatCount="indefinite"/>
-                🍲⛷👨‍💻👨‍💻⛷🍲
-            </text>
-        </svg> -->
-        
+        <div class="interface">
+
+            <div id="emoji-container"></div>
+
+            <div class="interface__controls">
+
+                <div class="buttons-wrapper">
+                    <button class="btn" id="unshift-btn">Add to beginning</button>
+                    <button class="btn" id="shift-btn">Remove from beginning</button>
+                </div>
+
+                <input type="text" id="emoji-input" placeholder="type an emoji 🎉">
+                <!-- <emoji-picker></emoji-picker> -->
+
+                <div class="buttons-wrapper">
+                    <button class="btn" id="push-btn">Add to end</button>
+                    <button class="btn" id="pop-btn">Remove from end</button>
+                </div>
+            </div>
+        </div>  
+
+        <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
         <script src="index.js"></script>
     </body>
 </html>
-
-     <!-- <style type="text/css">
-                #emojis { animation: x 1s ease-in-out infinite alternate; }
-
-                @keyframes x {
-                    from { 
-                        fill: #000;
-                        font-size: 10px;
-                        y: 0px;
-                         }
-                    to { 
-                        fill: #fff;
-                        font-size: 30px; 
-                        y: 50px;}
-                }
-            </style> -->

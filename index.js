@@ -25,8 +25,7 @@ function renderEmojis() {
             body {
                 background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='100%25'%3e%3ctext id='emojis' x='0px' y='10px' fill='black' font-size='100'%3e%3canimate attributeName='y' values='0px; 70px; 0px' dur='10s' repeatCount='indefinite'/%3e ${emojiString} %3c/text%3e%3c/svg%3e");
                 }
-        </style>
-            
+        </style>           
     `
 }
 
@@ -35,9 +34,7 @@ pushBtn.addEventListener("click", function(){
         myEmojis.push(emojiInput.value)
         emojiInput.value = ""
         renderEmojis()
-    }
-    
-    // document.body.style["background-color"] = red
+    }s
 })
 
 unshiftBtn.addEventListener("click", function(){

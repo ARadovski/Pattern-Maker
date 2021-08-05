@@ -1,128 +1,106 @@
+/* GENERAL + TYPOGRAPHY */
+
 html {
     height: 100vh;
-    font-family: Baloo;
 }
-
-/* @keyframes height {
-    from {
-        background-size-y: 10px;
-    }
-    to {
-        background-size-y: 100px;
-    }
-} */
 
 body {
     box-sizing: border-box;
-    padding: 10px;
+    margin: 0;
     background-color: lightblue;
-    /* background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='100%25'%3e%3ctext id='emojis' x='0px' y='10px' fill='black' font-size='100'%3e%3canimate attributeName='y' values='0px; 70px; 0px' dur='10s' repeatCount='indefinite'/%3e 👨‍💻⛷🍲 %3c/text%3e%3c/svg%3e"); */
-    background-size: 60% 10px;
+    background-size: 50% 10px;
     background-position: bottom center;
-    /* background-attachment: fixed; */
-    /* animation: height 4s infinite alternate; */
-    /* background-repeat: repeat; */  
-}
-
-#emoji-container {
-    margin: 40px;
-    text-align: center;
-    background-color: lightcoral;
-    /* background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='5px' width='400%'><text x='0' y='90px' fill='black' font-size='300'>🍲⛷👨‍💻👨‍💻⛷🍲</text></svg>");
-    background-size: 70% 10px;
-    background-position: top center;
-     */
-}
-
-#emoji-container span {
-    margin: 10px;
-    font-size: 60px;
-}
-
-#push-btn, #unshift-btn {
-    background-color: #80D87F;
-}
-
-#shift-btn,#pop-btn {
-    background-color: #E23349;
+    font-family: 'Comfortaa', cursive;
 }
 
 h1 {
     letter-spacing: 2px;
     text-align: center;
     color: white;
+    margin: 0;
 }
 
-input {
-    margin: 0 auto;
-    display: block;
-    border: none;
-    height: 30px;
-    background: white;
-    border-radius: 6px;
-    text-align: center;
-}
+
+/* BUTTONS */
 
 button {
-    font-family: Baloo;
+    font-family: inherit;
+    font-weight: 700;
     background: darkcyan;
     color: white;
     border: none;
-    padding: 4px 10px;
-    border-radius: 50%;
-    margin: 0 4px;
+    min-width: 16em;
+    padding: .5em 2em;
+    border-radius: 20px;
 }
 
-button:hover {
-    background: purple;
-    border: black 3px solid;
+.btn:hover {
+    background: black;
+    cursor: pointer;
 }
 
 .buttons-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 10px 0 0;
+    margin: 0 1em;
 }
 
-#background,
-#background-right {
-    position: absolute;
-    top: 10px;
-    z-index: -1;
-    font-size: 25rem;
-    letter-spacing: -1.2em;
-    /* transform: scale(8,.1); */
-    /* animation-name: stretchy, fontsiz; */
-    animation-duration:  4s, 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    /* overflow: hidden; */
+#push-btn, #unshift-btn {
+    background-color: rgba(3, 165, 252, .9);
+    margin-bottom: .5em;
 }
 
-#background-right {
-    right: 10px;
+#shift-btn,#pop-btn {
+    background-color: rgba(233, 44, 107, .9);
 }
 
-@keyframes stretchy {
-    from {
-        transform: scale(.1,1);
-        top: 0px;  
-        left: 20px;     
-    }
-    to {
-        transform: scale(2,.1);  
-        top: 100px;
-        left: 100px;
-    }
+
+/* LAYOUT */
+
+header,
+.interface {
+    background-color: rgba(3, 165, 252, .4)
 }
 
-@keyframes fontsiz {
-    from {
-        font-size: 1rem;
-    }
-    to {
-        font-size: 20rem;
-    }
+header {
+    margin: 0;
 }
 
+.display {
+    min-height: 20vh;
+}
+
+.interface {
+    padding-bottom: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.interface__controls {
+    display: flex;
+}
+
+#emoji-container {
+    min-height: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: rgba(3, 165, 252, .9);
+}
+
+#emoji-container span {
+    margin: .1em;
+    font-size: 30px;
+}
+
+input {
+    font-family: inherit;
+    margin: 0 auto;
+    display: inline-block;
+    min-width: 8em;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    text-align: center;
+}
