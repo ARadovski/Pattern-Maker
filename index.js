@@ -8,28 +8,18 @@ const popBtn = document.getElementById("pop-btn")
 const shiftBtn = document.getElementById("shift-btn")
 
 const caleidoscope = document.createElement('style')
-let emojiString = ""
-
 
 function renderEmojis() {
+    let emojiString = ""
     emojiContainer.innerHTML = ""
+
     for (let i = 0; i < myEmojis.length; i++) {
         const emoji = document.createElement('span')
         emoji.textContent = myEmojis[i]
         emojiContainer.append(emoji)
         emojiString += `${myEmojis[i]}`
     }
-}
 
-renderEmojis()
-
-pushBtn.addEventListener("click", function(){
-    if (emojiInput.value) {
-        myEmojis.push(emojiInput.value)
-        emojiInput.value = ""
-        renderEmojis()
-    }
-    
     document.head.innerHTML += `
         <style>
             body {
@@ -38,6 +28,15 @@ pushBtn.addEventListener("click", function(){
         </style>
             
     `
+}
+
+pushBtn.addEventListener("click", function(){
+    if (emojiInput.value) {
+        myEmojis.push(emojiInput.value)
+        emojiInput.value = ""
+        renderEmojis()
+    }
+    
     // document.body.style["background-color"] = red
 })
 
