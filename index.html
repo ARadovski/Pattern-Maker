@@ -1,36 +1,44 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <header class="header">
-            <h1>The Pattern-Maker</h1> 
-        </header>
+        <div class="container">
 
-        <div class="display"></div>
-        
-        <div class="interface">
-
-            <div id="emoji-container"></div>
-
-            <div class="interface__controls">
-
-                <div class="buttons-wrapper">
-                    <button class="btn" id="unshift-btn">Add to beginning</button>
-                    <button class="btn" id="shift-btn">Remove from beginning</button>
+            <header class="header">
+                <h1>The Pattern-Maker</h1> 
+            </header>
+    
+            <div class="display"></div>
+            
+            <div class="interface">
+    
+                <div id="emoji-container"></div>
+    
+                <div class="interface__controls">
+    
+                    <div class="buttons-wrapper">
+                        <button class="btn" id="unshift-btn">ADD L</button>
+                        <button class="btn" id="shift-btn">DEL L</button>
+                    </div>
+    
+                    <input class="input--text" type="text" id="emoji-input" placeholder="type an emoji 🎉">
+    
+                    <div class="buttons-wrapper">
+                        <button class="btn" id="push-btn">ADD R</button>
+                        <button class="btn" id="pop-btn">DEL R</button>
+                    </div>
                 </div>
+            </div>  
 
-                <input type="text" id="emoji-input" placeholder="type an emoji 🎉">
-                <!-- <emoji-picker></emoji-picker> -->
+        </div>
 
-                <div class="buttons-wrapper">
-                    <button class="btn" id="push-btn">Add to end</button>
-                    <button class="btn" id="pop-btn">Remove from end</button>
-                </div>
-            </div>
-        </div>  
-
+        <div class="container container--picker">
+            <emoji-picker></emoji-picker>
+        </div>
+    
         <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
         <script src="index.js"></script>
     </body>
