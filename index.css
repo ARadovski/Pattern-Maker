@@ -14,6 +14,7 @@ body {
 h1 {
     letter-spacing: 2px;
     text-align: center;
+    /* color: rgba(3, 165, 252, .9); */
     color: white;
     margin: 0;
 }
@@ -26,10 +27,10 @@ button {
     font-weight: 700;
     background: darkcyan;
     color: white;
-    border: none;
     min-width: 6em;
     padding: .5em 2em;
     border-radius: 20px;
+    border: none;
 }
 
 .btn:hover {
@@ -47,6 +48,7 @@ button {
 #push-btn, #unshift-btn {
     background-color: rgba(3, 165, 252, .9);
     margin-bottom: .5em;
+    /* border: solid 2px white; */
 }
 
 #shift-btn,#pop-btn {
@@ -70,10 +72,11 @@ button {
 }
 
 header {
-    /* background-color: rgba(3, 165, 252, .9); */
-    background-image: linear-gradient(rgba(3, 165, 252, .9), rgba(3, 165, 252, .001));
+    background-color: rgba(3, 165, 252, .6);
+    /* background-image: linear-gradient(rgba(3, 165, 252, .4), rgba(114, 147, 165, 0.001)); */
     margin: 0;
-    padding: .75em 0 1em;
+    padding: .5em;
+    /* border-bottom: 2px solid rgba(3, 165, 252, .9); */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -83,12 +86,13 @@ header {
 }
 
 .interface {
-    /* background-color: rgba(3, 165, 252, .4); */
-    background-image: linear-gradient(to top, rgba(3, 165, 252, .9), rgba(3, 165, 252, .001));
-    padding-bottom: 1em;
+    background-color: rgba(3, 165, 252, .5);
+    /* background-image: linear-gradient(to top, rgba(3, 165, 252, .4), rgba(3, 165, 252, .001)); */
+    padding: 1em 0;
     width: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    /* border-top: 2px solid rgba(3, 165, 252, .9); */
 }
 
 .interface__controls {
@@ -97,7 +101,7 @@ header {
 
 #emoji-container {
     min-height: 3em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     padding: .5em 0 0;
     text-align: center;
     /* background-color: rgba(3, 165, 252, .9); */
@@ -112,6 +116,7 @@ header {
     margin: 0 auto;
     /* display: inline-block; */
     min-width: 8em;
+    /* border: 2px solid rgba(3, 165, 252, .9); */
     border: none;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
